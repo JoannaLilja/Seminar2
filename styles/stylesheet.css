@@ -1,0 +1,56 @@
+body
+{
+
+	background:black;
+	color: #F1F1F1;
+	font: Verdana;
+	font-size: 16px;
+	text-align: center;
+
+}
+
+mh
+{
+	color: black;
+	font: Arial;
+	font-size: 40px;
+}
+
+in
+{
+
+}
+
+li
+{
+    display:inline;
+    padding: 0px 65px;
+}
+algn
+{
+	margin-left:auto;
+	margin-right: auto;
+	width: 8em;
+}
+
+.comment-container {
+	display: block;
+	width: 300px;
+	margin: 10px auto;
+	background-color: white;
+	color: gray;
+	text-align: center;
+}
+.comment-username {
+	padding: 5px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	background-color: lightgray;
+}
+.comment-text {
+	padding: 10px;
+
+}
+input {
+	color: gray;
+}
