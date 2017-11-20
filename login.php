@@ -22,7 +22,7 @@ if(!isset($_SESSION["user"]))
 			))
 		{
 			//var_dump($result->fetch_assoc());
-			$_SESSION["user"] = $result->fetch_assoc();
+			$_SESSION["user"] = $result->fetch_assoc(); //->fetch_assoc()
 		}
 		else
 		{
@@ -49,10 +49,11 @@ if(!isset($_SESSION["user"]))
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
 	<meta charset="utf-8">
 	<title>The Tasty Recipes Website</title>
-	<link rel = "stylesheet" type = "text/css" href = "styles/reset.css">
-	<link rel = "loginStyle" type = "text/css" href = "styles/loginStyle.css">
+	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css">
+
 </head>
 <body>
 	<div class="jumbotron text-center">
