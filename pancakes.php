@@ -56,12 +56,27 @@
 	{
 
 		//$result->fetch_assoc();
-		echo '
+		/*echo '
 		<div class="comment-container">
 		<div class="comment-username">'.$row['username'].'</div>
 		<div class="comment-text">'.$row['comment'].'</div>
 		</div>
-		';
+		';*/
+
+		echo ('
+		<form action="deleteAction.php">
+		<div class="comment-container">
+		<div class="comment-username">'.$row['username']. '
+		<input class="in" style="display:none;" type="text" name="type" value="pancakes" required>
+		<input class="in" style="display:none;" type="text" name="comment_id" value='.$row['comment_id'].' required>
+		<input class="in" style="display:none;" type="text" name="username" value='.$row['username'].' required>
+		<input class="in" style="display:none;" type="text" name="comment" value=' .$row['comment'].' required>
+		'.( $row["username"] = $_SESSION["user"]["username"] ? "<button type=submit>Delete</button> ": "" ).'
+		</div>
+		<div class="comment-text">'.$row['comment'] . ' </div>
+		</div>
+		</form>
+		');
 	}
 
 	if(isset($_SESSION["user"]))
