@@ -1,55 +1,71 @@
-/* Downloaded from http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+body
+{
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
+	background:gray;
+	color: #lightgray;
+	font: Verdana;
+	font-size: 16px;
+	text-align: center;
+
 }
 
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
+mh
+{
+	font: Arial;
+	font-size: 40px;
 }
 
-body {
-	line-height: 1;
+in
+{
+
+}
+
+li
+{
+    display:inline;
+    padding: 0px 65px;
+}
+algn
+{
+	margin-left:auto;
+	margin-right: auto;
+	width: 8em;
+}
+
+mh
+{
 	color: black;
-	background: white;
+	font: Arial;
+	font-size: 26px;
 }
 
-ol, ul {
-	list-style: none;
+cur
+{
+	color: red;
+	font: Arial;
+	font-size: 26px;
 }
 
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-}
 
-caption, th, td {
-	text-align: left;
-	font-weight: normal;
-}
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: "";
+.comment-container {
+	display: block;
+	width: 300px;
+	margin: 10px auto;
+	background-color: white;
+	color: gray;
+	text-align: center;
 }
+.comment-username {
+	padding: 5px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	background-color: lightgray;
+}
+.comment-text {
+	padding: 10px;
 
-blockquote, q {
-	quotes: "" "";
+}
+input {
+	color: gray;
 }
