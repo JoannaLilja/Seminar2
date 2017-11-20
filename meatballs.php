@@ -13,7 +13,7 @@
 	<meta charset="utf-8">
 	<title>Meatballs</title>
 	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css">
-	
+
 
 </head>
 <body>
@@ -52,13 +52,31 @@
 	{
 
 		//$result->fetch_assoc();
-		echo '
+		//var_dump($row['comment_id']);
+		//var_dump($row["username"] == $_SESSION["user"]["username"]);
+		//var_dump($_SESSION["user"]["username"]);
+
+		echo ('
+		<inTxt>
+		<form action="deleteAction.php">
 		<div class="comment-container">
-		<div class="comment-username">'.$row['username'].'</div>
-		<div class="comment-text">'.$row['comment'].'</div>
+		<div class="comment-username">'.$row['username']. '
+		<input class="in" style="display:none;" type="text" name="type" value="meatballs" required>
+		<input class="in" style="display:none;" type="text" name="comment_id" value='.$row['comment_id'].' required>
+		<input class="in" style="display:none;" type="text" name="username" value='.$row['username'].' required>
+		<input class="in" style="display:none;" type="text" name="comment" value=' .$row['comment'].' required>
+		'.( $row["username"] == $_SESSION["user"]["username"] ? '<button type=submit>Delete</button>' : ' '  ).'
 		</div>
-		';
+		<div class="comment-text">'.$row['comment'] . ' </div>
+		</div>
+		</form>
+		</inTxt>
+		');
 	}
+	//'.( $row["username"] = $_SESSION["user"]["username"] ? '<button type=submit>Delete</button>' : ' '  ).'
+	//		<option value="'.$value.'" '.(($value=='United States')?'selected="selected"':"").'>'.$value.'</option>
+
+
 
 	if(isset($_SESSION["user"]))
 	{
