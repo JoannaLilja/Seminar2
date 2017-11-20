@@ -13,7 +13,6 @@
 
 	<meta charset="utf-8">
 	<title>The Tasty Recipes Website</title>
-	<link rel = "stylesheet" type = "text/css" href = "styles/reset.css">
 	<link rel = "stylesheet" type = "text/css" href = "styles/stylesheet.css">
 
 </head>
